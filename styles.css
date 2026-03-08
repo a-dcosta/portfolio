@@ -1,0 +1,300 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px; /* To prevent content being hidden behind fixed navbar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.navcontainer {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.header a {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.header a:hover {
+    color: #007acc;
+}
+
+.navlink {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navlink a {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.navlink a:hover {
+    background-color: #e0eafc;
+    color: #007acc;
+}
+
+.header a:hover {
+    color: #007acc;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex:1;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.name {
+    color: #333;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #005fa3;
+}
+
+/* About page sections */
+.about, .Education, .achievements, .projects, .skills {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.subheading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.subheading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #007acc;
+    margin: 10px auto;
+    border-radius: 1px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.Education h3 {
+    color: #007acc;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.bp {
+    background: rgba(224, 234, 252, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 5px 0;
+}
+
+b {
+    color: #007acc;
+}
+
+/* Projects specific */
+.project {
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    background: rgba(224, 234, 252, 0.3);
+    border-radius: 5px;
+    border-left: 3px solid #007acc;
+}
+
+.project h3 {
+    color: #007acc;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #666;
+    font-size: 0.9rem;
+    align-self: baseline;
+    margin-top: auto;
+}
+
+/* Skills specific styling */
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+.skills li {
+    padding: 12px 15px;
+    background: rgba(0, 122, 204, 0.08);
+    border-radius: 5px;
+    border-left: 3px solid #007acc;
+    font-weight: 500;
+    color: #333;
+}
+
+.skills li::before {
+    content: "✓ ";
+    color: #007acc;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.skills li:hover {
+    background: rgba(0, 122, 204, 0.12);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 180px; /* Give it more room if the mobile header is chunky */
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.8rem;
+    }
+
+    .navdiv {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navlink {
+        margin: 0 5px;
+    }
+
+    .about, .Education, .achievements, .projects, .skills {
+        padding: 30px 15px;
+    }
+}
+
+.skills {
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-left: 3px solid #007acc;
+}
+
+.title {
+    color: #007acc;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
