@@ -1,0 +1,19 @@
+# Site Settings
+title: Adrian DCosta | Portfolio
+description: "My Portfolio"
+baseurl: "" # Leave this empty
+url: "https://a-dcosta.github.io" # Update this later!
+
+# URL Settings (The "Pretty URL" Magic)
+permalink: /:title/
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+# Markdown Settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections (Optional: for if you add a /projects/ section later)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
