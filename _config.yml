@@ -2,7 +2,7 @@
 title: Adrian DCosta | Portfolio
 description: "My Portfolio"
 baseurl: "" # Leave this empty
-url: "https://a-dcosta.github.io" # Update this later!
+url: "https://a-dcosta.github.io/portfolio" # Update this later!
 
 # URL Settings (The "Pretty URL" Magic)
 permalink: /:title/
